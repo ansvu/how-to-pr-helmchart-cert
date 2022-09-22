@@ -40,7 +40,8 @@ On branch cmm22.5
 nothing to commit, working tree clean
 ```
 ---
-## Prepare to add report
+## Make Directory and Add Report File
+- **Partner Project Directory Structure**
 ```diff
 + cd ./charts/charts/partners/
 + tree nokia
@@ -49,21 +50,34 @@ nokia
     └── OWNERS
 -----------------------------
 + cd nokia/cmm-operator-k8s
-+ ls -1
-OWNERS
 ----------------------------
-+ pwd
-charts/charts/partners/nokia/cmm-operator-k8s
-
+```
 - **Make Directory using helm-chart version**
   Helm-chart version can be found from report.yaml
   
-Note: version: 22.5.0-P4 --> P4 should be lower case p4
+  **Note**: version: 22.5.0-P4 --> P4 should be lower case p4. If there are CAPs, then UPPER-->lower
+
 ```diff
 + mkdir 22.5.0-p4
-
+```
 - **Copy report file to new directory**
 ```diff
 + cp report.yaml 22.5.0-p4/
 ```
 ---
+---
+### Git Add, Commit and Push to origin
+```diff
++ git add .
++ git commit -m "Added report.yaml"
++ git push origin cmm22.5
+--------------------------------------
+**Note**: if git push got error then try -f to force it
++ git push origin cmm22.5 -f
+```
+---
+### Start PR from github in your own fork
+From browser https://github.com/ansvu/charts, click on Pull Request.  
+Left Base is from main charts repo and branch as 'main', and right base is own-charts(forked) and select cmm22.5 as branch  
+![Helm Charts PR](img/pull-request.png "Start do Helm Chart PR")
+
