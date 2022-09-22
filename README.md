@@ -77,7 +77,8 @@ nokia
 ```
 ---
 ### Start PR from github in your own fork
-From browser https://github.com/ansvu/charts, click on Pull Request.  
+From browser https://github.com/ansvu/charts, click on Pull Request, then click on 'Compare & pull request'
+![Compare-pull-request](img/final-pr-merge.png "Compare & Pull-Request")
 Left Base is from main charts repo and branch as 'main', and right base is own-charts(forked) and select cmm22.5 as branch  
-![Helm Charts PR](img/pull-request.png "Start do Helm Chart PR")
+![Start Final PR](img/pull-request.png "Start do Helm Chart Final PR")
 
