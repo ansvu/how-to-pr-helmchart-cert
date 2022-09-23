@@ -1,7 +1,7 @@
 Table of Contents
 =================
 
-* [How to PR the Partner Helmchart for certification](#how-to-pr-the-partner-helmchart-for-certification)
+* [How To PR For Partner Helmchart Certification](#how-to-pr-for-partner-helmchart-certification)
    * [Pre-requisite](#pre-requisite)
    * [Fork openshift-helm-charts/charts](#fork-openshift-helm-chartscharts)
    * [Clone Main Charts Repo](#clone-main-charts-repo)
@@ -15,7 +15,7 @@ Table of Contents
    * [Start PR from github in your own fork](#start-pr-from-github-in-your-own-fork)
    * [RedHat Certification Chart Verifier Links](#redhat-certification-chart-verifier-links)
    
-# How to PR the Partner Helmchart for certification
+# How To PR For Partner Helmchart Certification
 How to prepare and do PR for Helm Chart Certification
 
 ## Pre-requisite
@@ -27,15 +27,15 @@ How to prepare and do PR for Helm Chart Certification
 Example of a good OWNERS file,
 ```yaml
 chart:
-  name: cuup
+  name: cmm-operator-k8s
   shortDescription: null
 publicPgpKey: null
 providerDelivery: True
 users:
-- githubUsername: shantanushivanekar123
+- githubUsername: nelsonpraveen
 vendor:
-  label: mavenir
-  name: Mavenir
+  label: nokia
+  name: Nokia Networks - LTTH
 ```
 ---
 **Note**: The github user: `xxxx`is used as an example, so this user will be your github username  
