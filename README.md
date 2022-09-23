@@ -1,6 +1,24 @@
 # how-to-pr-helmchart-cert
 How to prepare and do PR for Helm Chart Certification
 
+## Pre-requisite
+- Helm Chart Project is created from connect.redhat.com
+- A report.yaml with all test passed case
+- OWNERS file is generated with all the correct information after filled out project profile
+Example of a good OWNERS file,
+```yaml
+chart:
+  name: cuup
+  shortDescription: null
+publicPgpKey: null
+providerDelivery: True
+users:
+- githubUsername: shantanushivanekar123
+vendor:
+  label: mavenir
+  name: Mavenir
+```
+
 ## Fork openshift-helm-charts/charts
 From browser https://github.com/openshift-helm-charts/charts then click fork from top-right  
 ![Fork Openshift Helm Chart](img/fork-chart.png "Fork Openshift Helm Chart")
