@@ -87,14 +87,14 @@ nokia
 + cp report.yaml 22.5.0-p4/
 ```
 ---
-### Git Add, Commit and Push to origin
+## Git Add, Commit and Push to origin
 ```diff
 + git add .
 + git commit -m "Added report.yaml"
 + git push origin cmm22.5
 ```
 ---
-### Start PR from github in your own fork
+## Start PR from github in your own fork
 From browser https://github.com/xxxx/charts, click on Pull Request, then click on 'Compare & pull request'
 ![Compare-pull-request](img/final-pr-merge.png "Compare & Pull-Request")  
   
@@ -102,3 +102,13 @@ From browser https://github.com/xxxx/charts, click on Pull Request, then click o
 `Left Base is from main charts repo and branch as 'main', and right base is own-charts(forked) and select cmm22.5 as branch. Normally it should be automatic select correct main base and your own branch`.  
 Please just do double-checking it before Click on **'Create Pull Request'** button.  
 
+## Links
+- Helm-Chart-Submission   
+  https://github.com/redhat-certification/chart-verifier/blob/main/docs/helm-chart-submission.md
+- Helm-Chart-Annotations  
+  https://github.com/redhat-certification/chart-verifier/blob/main/docs/helm-chart-annotations.md
+- Helm-Chart-Troubeshooting  
+  https://github.com/redhat-certification/chart-verifier/blob/main/docs/helm-chart-troubleshooting.md
+- Helm-Docs  
+  https://github.com/redhat-certification/chart-verifier/blob/main/docs
+  
