@@ -1,4 +1,4 @@
-# how-to-pr-helmchart-cert
+# How to PR the Partner Helmchart for certification
 How to prepare and do PR for Helm Chart Certification
 
 ## Pre-requisite
