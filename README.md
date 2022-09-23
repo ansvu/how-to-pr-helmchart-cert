@@ -119,7 +119,9 @@ From browser https://github.com/xxxx/charts, click on Pull Request, then click o
 `Left Base is from main charts repo and branch as 'main', and right base is own-charts(forked) and select cmm22.5 as branch. Normally it should be automatic select correct main base and your own branch`.  
 Please just do double-checking it before Click on **'Create Pull Request'** button.  
 
-## Links
+## RedHat Certification Chart Verifier Links
+- RedHat-Certification-Chart-Verifier  
+  https://github.com/redhat-certification/chart-verifier
 - Helm-Chart-Submission   
   https://github.com/redhat-certification/chart-verifier/blob/main/docs/helm-chart-submission.md
 - Helm-Chart-Annotations  
