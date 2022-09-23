@@ -1,3 +1,20 @@
+Table of Contents
+=================
+
+* [How to PR the Partner Helmchart for certification](#how-to-pr-the-partner-helmchart-for-certification)
+   * [Pre-requisite](#pre-requisite)
+   * [Fork openshift-helm-charts/charts](#fork-openshift-helm-chartscharts)
+   * [Clone Main Charts Repo](#clone-main-charts-repo)
+   * [Add Upstream to Main Charts Repository](#add-upstream-to-main-charts-repository)
+   * [Add Origin to your own helm-chart that fork from main](#add-origin-to-your-own-helm-chart-that-fork-from-main)
+   * [Check Git Remote status for origin and upstream](#check-git-remote-status-for-origin-and-upstream)
+   * [Checkout charts Repository as new branch](#checkout-charts-repository-as-new-branch)
+   * [Check Git Status](#check-git-status)
+   * [Make Directory and Add Report File](#make-directory-and-add-report-file)
+   * [Git Add, Commit and Push to origin](#git-add-commit-and-push-to-origin)
+   * [Start PR from github in your own fork](#start-pr-from-github-in-your-own-fork)
+   * [Links](#links)
+   
 # How to PR the Partner Helmchart for certification
 How to prepare and do PR for Helm Chart Certification
 
