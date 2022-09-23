@@ -13,7 +13,7 @@ Table of Contents
    * [Make Directory and Add Report File](#make-directory-and-add-report-file)
    * [Git Add, Commit and Push to origin](#git-add-commit-and-push-to-origin)
    * [Start PR from github in your own fork](#start-pr-from-github-in-your-own-fork)
-   * [Links](#links)
+   * [RedHat Certification Chart Verifier Links](#redhat-certification-chart-verifier-links)
    
 # How to PR the Partner Helmchart for certification
 How to prepare and do PR for Helm Chart Certification
