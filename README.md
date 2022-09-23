@@ -10,7 +10,7 @@ Table of Contents
    * [Check Git Remote status for origin and upstream](#check-git-remote-status-for-origin-and-upstream)
    * [Checkout charts Repository as new branch](#checkout-charts-repository-as-new-branch)
    * [Check Git Status](#check-git-status)
-   * [Make Directory and Add Report File](#make-directory-and-add-report-file)
+   * [Make Directory and Copy Report File](#make-directory-and-copy-report-file)
    * [Git Add, Commit and Push to origin](#git-add-commit-and-push-to-origin)
    * [Start PR from github in your own fork](#start-pr-from-github-in-your-own-fork)
    * [RedHat Certification Chart Verifier Links](#redhat-certification-chart-verifier-links)
@@ -79,7 +79,7 @@ Switched to a new branch 'cmm22.5'
 On branch cmm22.5
 nothing to commit, working tree clean
 ```
-## Make Directory and Add Report File
+## Make Directory and Copy Report File
 - **Partner Project Directory Structure**
 ```diff
 + cd ./charts/charts/partners/
@@ -87,9 +87,6 @@ nothing to commit, working tree clean
 nokia
 └── cmm-operator-k8s
     └── OWNERS
------------------------------
-+ cd nokia/cmm-operator-k8s
-----------------------------
 ```
 - **Make Directory using helm-chart version**
   Helm-chart version can be found from report.yaml
@@ -97,6 +94,7 @@ nokia
   **Note**: version: 22.5.0-P4 --> P4 should be lower case p4. If there are CAPs, then UPPER-->lower
 
 ```diff
++ cd nokia/cmm-operator-k8s
 + mkdir 22.5.0-p4
 ```
 - **Copy report file to new directory**
