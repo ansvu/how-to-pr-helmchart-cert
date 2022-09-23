@@ -3,7 +3,8 @@ How to prepare and do PR for Helm Chart Certification
 
 ## Pre-requisite
 - Helm Chart Project is created from connect.redhat.com
-- A report.yaml with all test passed case
+- A report.yaml with all test passed case  
+ `when run chart-verifier to generate a report.yaml, it must include -d option(providerDelivery)`  
 - OWNERS file is generated with all the correct information after filled out project profile 
 ---
 Example of a good OWNERS file,
