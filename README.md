@@ -88,8 +88,23 @@ nokia
 └── cmm-operator-k8s
     └── OWNERS
 ```
+- **Example of Chart.yaml**
+```yaml
+annotations:
+  charts.openshift.io/archs: x86_64
+  charts.openshift.io/name: Nokia CMM
+  charts.openshift.io/provider: Nokia
+  charts.openshift.io/supportURL: https://github.com/nokiacmm/helm-chart
+apiVersion: v2
+description: A Helm chart for CMM in Kubernetes using operators
+icon: https://www.nokia.com/chart-icon.png
+name: cmm-operator-k8s
+type: application
+version: 22.5.0-P4
+kubeVersion: 1.20.0 - 1.24.0
+```
 - **Make Directory using helm-chart version**
-  Helm-chart version can be found from report.yaml
+  Helm-chart version can be found from Chart.yaml or report.yaml
   
   **Note**: version: 22.5.0-P4 --> P4 should be lower case p4. If there are CAPs, then UPPER-->lower
 
