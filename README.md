@@ -112,7 +112,7 @@ kubeVersion: 1.20.0 - 1.24.0
 - **Make Directory using helm-chart version**
   Helm-chart version can be found from Chart.yaml or report.yaml
   
-  **Note**: version: 22.5.0-P4 --> P4 should be lower case p4. If there are CAPs, then UPPER-->lower
+  **Note**: version: 22.5.0-P4 --> p4 should be lower case. If there are CAPs, then UPPER-->lower
 
 ```diff
 + cd nokia/cmm-operator-k8s
