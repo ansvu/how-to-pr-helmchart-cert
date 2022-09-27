@@ -1,6 +1,7 @@
 Table of Contents
 =================
 
+* [Table of Contents](#table-of-contents)
 * [How To PR For Partner Helmchart Certification](#how-to-pr-for-partner-helmchart-certification)
    * [Pre-requisite](#pre-requisite)
    * [Fork openshift-helm-charts/charts](#fork-openshift-helm-chartscharts)
@@ -13,6 +14,8 @@ Table of Contents
    * [Make Directory and Copy Report File](#make-directory-and-copy-report-file)
    * [Git Add, Commit and Push to origin](#git-add-commit-and-push-to-origin)
    * [Start PR from github in your own fork](#start-pr-from-github-in-your-own-fork)
+   * [Post PR Checking](#post-pr-checking)
+   * [Ready To Publish Helm Chart](#ready-to-publish-helm-chart)
    * [RedHat Certification Chart Verifier Links](#redhat-certification-chart-verifier-links)
    
 # How To PR For Partner Helmchart Certification
@@ -138,13 +141,13 @@ From browser https://github.com/xxxx/charts, click on Pull Request, then click o
 `Left Base is from main charts repo and branch as 'main', and right base is own-charts(forked) and select cmm22.5 as branch. Normally it should be automatic select correct main base and your own branch`.  
 Please just do double-checking it before Click on **'Create Pull Request'** button.  
 
-## Post PR Checking
+# Post PR Checking
 After Click on Create Pull Reques Button, then go here to check status  
 https://github.com/openshift-helm-charts/charts/actions
 
 ![PR-Build-Status](img/pr-build-status.png "Check PR Build Status")
 
-## Ready To Publish Helm Chart
+# Ready To Publish Helm Chart
 When PR is succesful Merged to main chart repository, then go back to connect.redhat.com and under helm chart project product-list, click on your helm-chart project then click Publish the helm-chart. 
 - **Click On Your Helm Chart Project** 
 ![Helm-Chart-Project](img/helm-chart-project.png "Click on Helm Chart Project")
@@ -152,7 +155,7 @@ When PR is succesful Merged to main chart repository, then go back to connect.re
 ![Publish-Helm-Chart](img/click-publish-helm-chart.png "Publish Helm-Chart")
 
 
-## RedHat Certification Chart Verifier Links
+# RedHat Certification Chart Verifier Links
 - RedHat-Certification-Chart-Verifier  
   https://github.com/redhat-certification/chart-verifier
 - Helm-Chart-Submission   
