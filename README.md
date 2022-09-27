@@ -138,6 +138,20 @@ From browser https://github.com/xxxx/charts, click on Pull Request, then click o
 `Left Base is from main charts repo and branch as 'main', and right base is own-charts(forked) and select cmm22.5 as branch. Normally it should be automatic select correct main base and your own branch`.  
 Please just do double-checking it before Click on **'Create Pull Request'** button.  
 
+## Post PR Checking
+After Click on Create Pull Reques Button, then go here to check status  
+https://github.com/openshift-helm-charts/charts/actions
+
+![PR-Build-Status](img/pr-build-status.png "Check PR Build Status")
+
+## Ready To Publish Helm Chart
+When PR is succesful Merged to main chart repository, then go back to connect.redhat.com and under helm chart project product-list, click on your helm-chart project then click Publish the helm-chart. 
+- Click On Your Helm Chart Project  
+![Helm-Chart-Project](img/helm-chart-project.png "Click on Helm Chart Project")
+- Ready to Publish Helm-Chart 
+![Publish-Helm-Chart](img/click-publish-helm-chart.png "Publish Helm-Chart")
+
+
 ## RedHat Certification Chart Verifier Links
 - RedHat-Certification-Chart-Verifier  
   https://github.com/redhat-certification/chart-verifier
