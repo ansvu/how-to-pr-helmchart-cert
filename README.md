@@ -58,6 +58,12 @@ From browser https://github.com/openshift-helm-charts/charts then click fork fro
 ```diff
 + git remote add origin https://github.com/xxxx/charts.git
 ```
+**Note**: If it says remote origin is already existed, but not under your github user(xxxx) then remove it and re-add with your github-username  
+  
+To remove remote origin:
+```diff
++ git remote remove origin
+```
 ---
 ## Check Git Remote status for origin and upstream
 ```diff
