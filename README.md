@@ -146,7 +146,7 @@ Please just do double-checking it before Click on **'Create Pull Request'** butt
 After Click on Create Pull Reques Button, then go here to check status  
 https://github.com/openshift-helm-charts/charts/actions
 
-![PR-Build-Status](img/pr-build-status.png "Check PR Build Status")
+![PR-Build-Status](img/pr-success-build.png "Check PR Build Status")
 
 # Ready To Publish Helm Chart
 When PR is succesful Merged to main chart repository, then go back to connect.redhat.com and under helm chart project product-list, click on your helm-chart project then click Publish the helm-chart. 
