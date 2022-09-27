@@ -14,9 +14,10 @@ Table of Contents
    * [Make Directory and Copy Report File](#make-directory-and-copy-report-file)
    * [Git Add, Commit and Push to origin](#git-add-commit-and-push-to-origin)
    * [Start PR from github in your own fork](#start-pr-from-github-in-your-own-fork)
-   * [Post PR Checking](#post-pr-checking)
-   * [Ready To Publish Helm Chart](#ready-to-publish-helm-chart)
-   * [RedHat Certification Chart Verifier Links](#redhat-certification-chart-verifier-links)
+* [Post PR Checking](#post-pr-checking)
+* [Ready To Publish Helm Chart](#ready-to-publish-helm-chart)
+* [RedHat Certification Chart Verifier Links](#redhat-certification-chart-verifier-links)
+
    
 # How To PR For Partner Helmchart Certification
 How to prepare and do PR for Helm Chart Certification
