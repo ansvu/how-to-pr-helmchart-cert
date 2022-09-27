@@ -146,9 +146,9 @@ https://github.com/openshift-helm-charts/charts/actions
 
 ## Ready To Publish Helm Chart
 When PR is succesful Merged to main chart repository, then go back to connect.redhat.com and under helm chart project product-list, click on your helm-chart project then click Publish the helm-chart. 
-- Click On Your Helm Chart Project  
+- **Click On Your Helm Chart Project** 
 ![Helm-Chart-Project](img/helm-chart-project.png "Click on Helm Chart Project")
-- Ready to Publish Helm-Chart 
+- **Ready to Publish Helm-Chart**  
 ![Publish-Helm-Chart](img/click-publish-helm-chart.png "Publish Helm-Chart")
 
 
