@@ -15,6 +15,7 @@ Table of Contents
    * [Git Add, Commit and Push to origin](#git-add-commit-and-push-to-origin)
    * [Start PR from github in your own fork](#start-pr-from-github-in-your-own-fork)
 * [Post PR Checking](#post-pr-checking)
+* [Git Rebase When OWNERS File Updated After PR](#git-rebase-when-owners-file-updated-after-pr)
 * [Ready To Publish Helm Chart](#ready-to-publish-helm-chart)
 * [RedHat Certification Chart Verifier Links](#redhat-certification-chart-verifier-links)
 
@@ -137,7 +138,7 @@ kubeVersion: 1.20.0 - 1.24.0
 ## Start PR from github in your own fork
 From browser https://github.com/xxxx/charts, click on Pull Request, then click on 'Compare & pull request'
 ![Compare-pull-request](img/final-pr-merge.png "Compare & Pull-Request")  
-  
+
 ![Start Final PR](img/pull-request1.png "Start do Helm Chart Final PR")
 `Left Base is from main charts repo and branch as 'main', and right base is own-charts(forked) and select cmm22.5 as branch. Normally it should be automatic select correct main base and your own branch`.  
 Please just do double-checking it before Click on **'Create Pull Request'** button.  
@@ -147,6 +148,13 @@ After Click on Create Pull Reques Button, then go here to check status
 https://github.com/openshift-helm-charts/charts/actions
 
 ![PR-Build-Status](img/pr-success-build.png "Check PR Build Status")
+
+# Git Rebase When OWNERS File Updated After PR
+- **From Your Local Branch Directory**
+```shellSession
+git pull upstream main --rebase
+git push origin cmm22.5 -f
+```
 
 # Ready To Publish Helm Chart
 When PR is succesful Merged to main chart repository, then go back to connect.redhat.com and under helm chart project product-list, click on your helm-chart project then click Publish the helm-chart. 
