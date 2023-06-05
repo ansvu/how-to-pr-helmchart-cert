@@ -168,6 +168,8 @@ When PR is succesful Merged to main chart repository, then go back to connect.re
 ![Helm-Chart-Project](img/helm-chart-project.png "Click on Helm Chart Project")
 - **Ready to Publish Helm-Chart**  
 ![Publish-Helm-Chart](img/click-publish-helm-chart.png "Publish Helm-Chart")
+  
+Example of real CMM23.5 PR [Click Here](https://github.com/openshift-helm-charts/charts/pull/877)
 
 **Note:** If Product-listing is already set to published, then once PR is merged it will automatic auto-publish to the catalog.
 
