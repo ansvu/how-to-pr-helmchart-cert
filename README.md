@@ -26,21 +26,27 @@ How to prepare and do PR for Helm Chart Certification
 ## Pre-requisite
 - Helm Chart Project is created from connect.redhat.com
 - A report.yaml with all test cases must be passed  
- `when run chart-verifier to generate a report.yaml, it must include -d option(providerDelivery)`  
+ `when run chart-verifier to generate a report.yaml, it must include -W option(providerDelivery)`  
+```shellSession
+./chart-verifier verify --config config.yaml /var/home/core/deployment/CMM_34_QA/helm_chart/CMM-operator-k8s-23.5.0-p1.tgz --chart-values ~/deployment/CMM_34_QA/system/values.yaml_cert -W
+```  
+**Note:** Make sure this parameter `webCatalogOnly: true` on report.yaml  
+Also, there is new change where this parameter `providerDelivery: true` always present and already defined in OWNERS. 
+
 - OWNERS file is generated with all the correct information after filled out project profile 
 ---
 Example of a good OWNERS file,
 ```yaml
 chart:
   name: cmm-operator-k8s
-  shortDescription: null
-publicPgpKey: null
-providerDelivery: True
+  shortDescription: unknown
+providerDelivery: true
+publicPgpKey: unknown
 users:
-- githubUsername: nelsonpraveen
+- githubUsername: xxxx
 vendor:
   label: nokia
-  name: Nokia Networks - LTTH
+  name: Nokia
 ```
 ---
 **Note**: The github user: `xxxx`is used as an example, so this user will be your github username  
@@ -81,13 +87,13 @@ upstream        https://github.com/openshift-helm-charts/charts (push)
 ---
 ## Checkout charts Repository as new branch
 ```diff
-+ git checkout -b cmm22.5
-Switched to a new branch 'cmm22.5'
++ git checkout -b cmm23.5
+Switched to a new branch 'cmm23.5'
 ```
 ## Check Git Status
 ```diff
 + git status
-On branch cmm22.5
+On branch cmm23.5
 nothing to commit, working tree clean
 ```
 ## Make Directory and Copy Report File
@@ -111,28 +117,28 @@ description: A Helm chart for CMM in Kubernetes using operators
 icon: https://www.nokia.com/chart-icon.png
 name: cmm-operator-k8s
 type: application
-version: 22.5.0-P4
-kubeVersion: 1.20.0 - 1.24.0
+version: 23.5.0-p1
+kubeVersion: '>= 1.20.0-0'
 ```
 - **Make Directory using helm-chart version**
   Helm-chart version can be found from Chart.yaml or report.yaml
   
-  **Note**: version: 22.5.0-P4 --> p4 should be lower case. If there are CAPs, then UPPER-->lower
+  **Note**: `version:` and `name:` must be all lower-case! 
 
 ```diff
 + cd nokia/cmm-operator-k8s
-+ mkdir 22.5.0-p4
++ mkdir 23.5.0-p1
 ```
 - **Copy report file to new directory**
 ```diff
-+ cp report.yaml 22.5.0-p4/
++ cp report.yaml 23.5.0-p1/
 ```
 ---
 ## Git Add, Commit and Push to origin
 ```diff
 + git add .
 + git commit -m "Added report.yaml"
-+ git push origin cmm22.5
++ git push origin cmm23.5
 ```
 ---
 ## Start PR from github in your own fork
@@ -140,7 +146,7 @@ From browser https://github.com/xxxx/charts, click on Pull Request, then click o
 ![Compare-pull-request](img/final-pr-merge.png "Compare & Pull-Request")  
 
 ![Start Final PR](img/pull-request1.png "Start do Helm Chart Final PR")
-`Left Base is from main charts repo and branch as 'main', and right base is own-charts(forked) and select cmm22.5 as branch. Normally it should be automatic select correct main base and your own branch`.  
+`Left Base is from main charts repo and branch as 'main', and right base is own-charts(forked) and select cmm23.5 as branch. Normally it should be automatic select correct main base and your own branch`.  
 Please just do double-checking it before Click on **'Create Pull Request'** button.  
 
 # Post PR Checking
@@ -153,7 +159,7 @@ https://github.com/openshift-helm-charts/charts/actions
 - **From Your Local Branch Directory**
 ```shellSession
 git pull upstream main --rebase
-git push origin cmm22.5 -f
+git push origin cmm23.5 -f
 ```
 
 # Ready To Publish Helm Chart
@@ -163,6 +169,7 @@ When PR is succesful Merged to main chart repository, then go back to connect.re
 - **Ready to Publish Helm-Chart**  
 ![Publish-Helm-Chart](img/click-publish-helm-chart.png "Publish Helm-Chart")
 
+**Note:** If Product-listing is already set to published, then once PR is merged it will automatic auto-publish to the catalog.
 
 # RedHat Certification Chart Verifier Links
 - RedHat-Certification-Chart-Verifier  
