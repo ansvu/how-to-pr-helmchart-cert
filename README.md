@@ -26,7 +26,7 @@ How to prepare and do PR for Helm Chart Certification
 ## Pre-requisite
 - Helm Chart Project is created from connect.redhat.com
 - A report.yaml with all test cases must be passed  
- `when run chart-verifier to generate a report.yaml, it must include -W option(providerDelivery)`  
+ `when run chart-verifier to generate a report.yaml, it must include -W option (webCatalogOnly)`  
 ```shellSession
 ./chart-verifier verify --config config.yaml /var/home/core/deployment/CMM_34_QA/helm_chart/CMM-operator-k8s-23.5.0-p1.tgz --chart-values ~/deployment/CMM_34_QA/system/values.yaml_cert -W
 ```  
