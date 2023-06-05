@@ -171,7 +171,7 @@ When PR is succesful Merged to main chart repository, then go back to connect.re
   
 Example of real CMM23.5 PR [Click Here](https://github.com/openshift-helm-charts/charts/pull/877)
 
-**Note:** If Product-listing is already set to published, then once PR is merged it will automatic auto-publish to the catalog.
+**Note:** If Product-listing is already set to `Publish`, then once PR is merged it will automatic auto-publish to the catalog.
 
 # RedHat Certification Chart Verifier Links
 - RedHat-Certification-Chart-Verifier  
